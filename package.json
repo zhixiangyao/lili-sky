@@ -10,9 +10,16 @@
   "scripts": {
     "dev": "nodemon --config nodemon.json",
     "build": "zx ./scripts/build.mjs",
-    "prepare": "npm run build",
-    "lint:eslint": "eslint \"src/**/*.ts\" --fix",
-    "lint:prettier": "prettier --write ."
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "npx eslint --fix"
+    ],
+    "*.{js,jsx,ts,tsx,md,html,css}": [
+      "npx prettier --write ."
+    ]
   },
   "keywords": [],
   "author": "zhixiangyao",
@@ -29,6 +36,8 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-define-config": "^1.0.9",
     "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
     "nodemon": "^2.0.12",
     "prettier": "^2.3.2",
     "rimraf": "^3.0.2",

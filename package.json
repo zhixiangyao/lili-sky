@@ -1,12 +1,20 @@
 {
   "name": "lili-sky",
   "version": "0.1.0",
+  "private": true,
   "description": "utils",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
+  "keywords": [],
+  "author": "zhixiangyao",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhixiangyao/lili-sky.git"
+  },
   "scripts": {
     "dev": "nodemon --config nodemon.json",
     "build": "zx ./scripts/build.mjs",
@@ -20,13 +28,6 @@
     "*.{js,jsx,ts,tsx,md,html,css}": [
       "npx prettier --write ."
     ]
-  },
-  "keywords": [],
-  "author": "zhixiangyao",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zhixiangyao/lili-sky.git"
   },
   "devDependencies": {
     "@types/node": "^16.6.0",

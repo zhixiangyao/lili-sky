@@ -1,7 +1,6 @@
 {
   "name": "lili-sky",
   "version": "0.1.0",
-  "private": true,
   "description": "utils",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",

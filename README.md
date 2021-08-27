@@ -9,11 +9,11 @@ npm install lili-sky
 ## Example
 
 ```js
-import { Unicorn } from "lili-sky"
+import { Unicorn } from 'lili-sky'
 // OR in nodeJS ( commonJS module )
-const { Unicorn } = require("lili-sky")
+const { Unicorn } = require('lili-sky')
 
 const myUnicorn = new Unicorn()
 
-console.log(myUnicorn.sayHelloTo("jason"))
+console.log(myUnicorn.sayHelloTo('jason'))
 ```

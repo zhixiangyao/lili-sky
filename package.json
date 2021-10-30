@@ -9,7 +9,9 @@
     "index.js",
     "dist"
   ],
-  "keywords": ["classNames"],
+  "keywords": [
+    "classNames"
+  ],
   "author": "zhixiangyao",
   "license": "MIT",
   "repository": {
